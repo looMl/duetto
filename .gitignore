@@ -1,0 +1,18 @@
+# Build output
+/duetto
+*.exe
+
+# Frontend: dependencies and build (the .gitkeep lets `go build` embed an empty dir)
+web/node_modules/
+web/dist/*
+!web/dist/.gitkeep
+
+# Local tools and leftovers (ffmpeg, cloudflared, update drops, partial encodes)
+/tools/
+/_update/
+*.part
+*.tgz
+
+# Private notes
+/docs/
+CLAUDE.md
